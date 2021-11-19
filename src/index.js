@@ -1,3 +1,3 @@
-import test from './modules/test';
+import modal from './modules/modal';
 
-test();
+modal();
