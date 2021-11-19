@@ -9,6 +9,7 @@ const accordeon = () => {
             elems.forEach((el) => {
                 el.classList.remove('active');
             });
+            
             el.classList.add('active');
         }
     });
