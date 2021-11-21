@@ -4,6 +4,7 @@ const modal = () => {
     const btn = document.querySelectorAll('.callback-btn');
     const secondBtn = document.querySelector('.button-services');
     const closeBtn = document.querySelector('.modal-close');
+    const sliderBlock = document.querySelector('.services-elements');
 
     btn.forEach((el) => {
         el.addEventListener('click', () => {
@@ -14,6 +15,12 @@ const modal = () => {
     secondBtn.addEventListener('click', () => {
         overlay.style.display = 'block';
         modal.style.display = 'block';
+    });
+    sliderBlock.addEventListener('click', ({target}) => {
+        if (target.closest('.absolute')) {
+            overlay.style.display = 'block';
+            modal.style.display = 'block';
+        }
     });
     closeBtn.addEventListener('click', () => {
         overlay.style.display = 'none';
