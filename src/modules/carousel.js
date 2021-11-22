@@ -180,7 +180,4 @@ const carousel = new SliderCarousel({
   ]
   });
 
-  carousel.init();
-
-
 export default carousel;
