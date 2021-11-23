@@ -844,6 +844,7 @@ hr.white {
 }
 .top-slider .slick-dots li {
 	border-color: #fff !important;
+	z-index: 10;
 }
 .top-slider .slick-dots li.slick-active {
 	background-color: #fff !important;

@@ -37,7 +37,9 @@ const sending = ({formId}) => {
             formBody[key] = val;
         });
 
-        if (secondInput.value === '') {
+        if (firstInput.value === '') {
+            alert ('Ошибка! Введите имя');
+        } else if (secondInput.value === '') {
             alert ('Ошибка! Введите номер');
         } else {
             sendData(formBody);
